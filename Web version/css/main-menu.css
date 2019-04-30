@@ -1,0 +1,63 @@
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 400px;
+	background: #f8f8f8;
+}
+.menu .logo {
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: italic;
+	color: #B53471;
+}
+.menu .logo i {
+	padding-right: 5px;	
+}
+.menu ul {
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+}
+.menu ul > li {
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	font-size: 36px;
+	width: 300px;
+	border: 1px solid #0652DD;
+	color: #0652DD;
+	cursor: pointer;
+	margin: 0px 0px 20px;
+	padding: 5px 0px;
+}
+.menu ul > li:hover {
+	background: #0652DD;
+	color: #fff;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.menu .copy {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #797979;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}

@@ -1,0 +1,56 @@
+.profile {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 400px;
+	right: 0;
+	font-size: 36px;
+	background: #fff;
+}
+.profile__head {
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid #333;
+	text-align: right;
+	padding: 10px 20px;
+}
+.profile__body {
+	position: absolute;
+	width: 100%;
+	top: 15%;
+	overflow-y: scroll;
+	height: 85%;
+}
+.profile__body::-webkit-scrollbar {
+  width: 10px;
+}
+.profile__body::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+.profile__body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.profile-section {
+	padding: 0px 20px 20px;
+}
+.profile-section--title {
+	padding: 5px 0px;
+	font-weight: 500;
+}
+.profile-section--content {
+	font-size: 24px;
+}
+.profile-section--content---key {
+	text-align: right;
+	padding: 10px;
+}
+.profile-section--content---val {
+	width: 200px;
+	padding: 10px;
+}
+.profile-section--content > .row:nth-child(2n + 1) > .profile-section--content---key {
+	background: #f2f2f2;
+}
+.profile-section--content > .row:nth-child(2n) > .profile-section--content---key {
+	background: #b5cbf5;
+}

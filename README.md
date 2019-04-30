@@ -2,7 +2,7 @@
 ---
 ### Created by:
 - Aleksieiev Vladyslav (<https://github.com/AleksieievVladyslav>) 
-- Hordienko Nataliia (<https://github.com/>)
+- Hordiienko Nataliia (<https://github.com/nhordiienko>)
 - (<https://github.com/parahinad>)
-- Kockina Kateryna
+- Kochina Kateryna
 ---

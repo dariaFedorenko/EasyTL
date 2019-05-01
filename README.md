@@ -5,4 +5,4 @@
 - Hordiienko Nataliia (<https://github.com/nhordiienko>)
 - (<https://github.com/parahinad>)
 - Kochina Kateryna
----
+- Fedorenko Daria

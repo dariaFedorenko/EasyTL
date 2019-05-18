@@ -13,7 +13,7 @@ class HelpFAQ {
 			answer: "Результат сохраняется автоматически, если вы авторизовались."
 		},
 		{
-			topic: "Как поделиться результатом",
+			topic: "Как поделиться результатом?",
 			answer: "Нажимаете на кнопку \"Поделиться\" в профиле и выбираете нужную вам соцсеть."
 		},
 		{
@@ -35,10 +35,14 @@ class HelpFAQ {
 	]
 	constructor(identifierTopic, identifierAnswer) {
 		for (let i = 0; i < this.faq.length; i++) {
-			if (i != 0) 
+			if (i != 0) {
 				$(identifierTopic).append(this.GetP(this.faq[i].topic));
-			else 
+				$(identifierAnswer).append(this.GetP(this.faq[i].answer));
+			}
+			else {
 				$(identifierTopic).append(this.GetP(this.faq[i].topic, true));
+				$(identifierAnswer).append(this.GetP(this.faq[i].answer, true));
+			}
 		}
 	}
 	GetP(context, c) {

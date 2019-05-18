@@ -1,9 +1,98 @@
-.help {
-	
+.help-logo {
+	padding-top: 10px;
+	text-align: center;
+	color: #712046;
+	font-style: italic;
 }
-.theory {
-	background: green;
+.help-logo i {
+	padding-right: 10px;
 }
-.quick {
-	background: red;
+.help .help-faq {
+	width: 40%;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.help .help-faq p {
+	position: relative;
+	padding: 10px 0px 10px 30px;
+	font-weight: 200;
+	cursor: pointer;
+}
+.help .help-faq p::after {
+	content: '';
+	display: block;
+	height: 15px;
+	width: 15px;
+	background: #88b0f9;
+	border-radius: 50%;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.help .help-faq p.active::after {
+	background: #a7ff84;
+}
+.help .help-faq p::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 3px;
+	height: 2px;
+	right: 0;
+	width: 0;
+	background: #88b0f9;
+}
+.help .help-faq p:hover::before {
+	left: 0;
+	right: auto;
+	width: 100%;
+	-webkit-transition: all 0.7s linear;
+	-o-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+}
+.help-answers {
+	vertical-align: middle;
+	padding-left: 20px;
+	border-left: 0.5px solid #434343;
+}
+.help .help-answers p{
+	display: none;
+}
+.help .help-answers p.active{
+	display: block;
+}
+.help-title {
+	padding-left: 20px;
+	font-size: 1.4em;
+	padding-bottom: 20px;
+}
+.help-title.help-center {
+	text-align: center;
+	padding-top: 20px;
+}
+.help-buttons {
+	width: 100%;
+	text-align: center;
+}
+.help-button {
+	text-align: center;
+	border: 1px solid #0652DD;
+	font-size: 1.2em;
+	padding: 7px 15px;
+	margin-bottom: 15px;
+	color: #0652DD;
+	cursor: pointer;
+	font-weight: 300;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.help-button:hover {
+	background: #0652DD;
+	color: #fff;
 }

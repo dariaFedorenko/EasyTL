@@ -3,6 +3,7 @@
 ### Created by:
 - Aleksieiev Vladyslav (<https://github.com/AleksieievVladyslav>) 
 - Hordiienko Nataliia (<https://github.com/nhordiienko>)
-- (<https://github.com/parahinad>)
+- Parakhina Daria (<https://github.com/parahinad>)
 - Kochina Kateryna (<https://github.com/Fortel-X>)
+
 ---

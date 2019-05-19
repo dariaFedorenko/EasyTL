@@ -6,67 +6,119 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/display.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/main-menu.css">
-	<link rel="stylesheet" href="css/main-profile.css">
+	<link rel="stylesheet" href="css/load.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/help.css">
+	<link rel="stylesheet" href="css/quick.css">
 </head>
 <body>
 	<main>
-		<div class="menu">
-			<div class="logo"><a href="/"><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</a></div>
-			<ul>
-				<li><a href="/">Старт</a></li>
-				<li><a href="/">Быстрый тест</a></li>
-				<li><a href="/">Помощь</a></li>
-			</ul>
-			<div class="copy">&copy; 2019. Все права защищены</div>
-		</div>
-		<div class="profile">
-			<div class="profile__head">
-				<div class="profile__head-user">Гость</div>
+		<div class="dynamic-panel">
+			<div class="state load active" id="load">
+				<div class="title"><h1>Make it easier</h1></div>
+				<div class="title"><h1 class="light">with</h1></div>
+				<div class="logo"><h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1></div>
+				<div class="spiner">
+					<span></span>
+				</div>
 			</div>
-			<div class="profile__body">
-				<div class="profile-section">
-					<div class="profile-section--title">Вопросы:</div>
-					<div class="profile-section--content">
-						<div class="row">
-							<div class="profile-section--content---key">Всего</div>
-							<div class="profile-section--content---val">0</div>
+			<div class="state main-menu active">
+				<div class="row">
+					<div class="menu-col">
+						<div class="logo">
+							<h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1>
 						</div>
-						<div class="row">
-							<div class="profile-section--content---key">Правильных ответов</div>
-							<div class="profile-section--content---val">0</div>
+						<div class="menu">
+							<ul>
+								<a href="#theory"><li>Пройти обучение</li></a>
+								<a href="#quick"><li>Быстрый тест</li></a>
+								<a href="#help"><li>Помощь</li></a>
+							</ul>
+							<div class="copy">&copy; Все права защищены</div>
+						</div>
+					</div>
+					<div class="profile-col">
+						<div class="profile">
+							<div class="profile-panel">
+								<div class="profile-state unlogged"></div>
+								<div class="profile-state sing-in"></div>
+								<div class="profile-state sing-up"></div>
+								<div class="profile-state logged"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="profile-section">
-					<div class="profile-section--title">Тесты:</div>
-					<div class="profile-section--content">
-						<div class="row">
-							<div class="profile-section--content---key">Всего</div>
-							<div class="profile-section--content---val">0</div>
-						</div>
-						<div class="row">
-							<div class="profile-section--content---key">Успешных</div>
-							<div class="profile-section--content---val">0</div>
+			</div>
+			<div class="state theory">
+				
+			</div>
+			<div class="state quick">
+				<div class="wrapper">
+					<div class="logo">
+						<h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1>
+					</div>
+					<div class="question">
+						<div class="q-header">
+							<div>
+								<div class="row">
+									<div class="col-l"><div class="progress"><p>Вопрос</p><p class="progress-content"><span id="progress"></span> из 20</p></div></div>
+									<div class="col-r"><div class="clock"></div></div>
+								</div>
+							</div>
+							<div class="q-title">
+								<div id="q-title"></div>
+							</div>
+							<div class="q-content">
+								<div class="row">
+									<div id="img"></div>
+									<div class="answers">
+										<div id="q-formulation"></div>
+										<div class="q">
+											<div class="q-a" id="answer-0"></div><div class="q-a" id="answer-1"></div><div class="q-a" id="answer-2"></div><div class="q-a" id="answer-3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="loader"></div>
 				</div>
-				<div class="profile-section">
-					<div class="profile-section--title">Средние значения:</div>
-					<div class="profile-section--content">
-						<div class="row">
-							<div class="profile-section--content---key">Правильных ответов в тесте</div>
-							<div class="profile-section--content---val">0</div>
-						</div>
-						<div class="row">
-							<div class="profile-section--content---key">Времени на тест</div>
-							<div class="profile-section--content---val">0</div>
+			</div>
+			<div class="state help">
+				<div class="wrapper">
+					<div class="help-logo">
+						<h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1>
+					</div>
+					<div class="help-title">
+						Часто задаваемые вопросы
+					</div>
+					<div class="row">
+						<div class="help-faq"></div>
+						<div class="help-answers"></div>
+					</div>
+					<div class="help-title help-center">
+						Не нашли свой вопрос? Напишите нам!
+					</div>
+					<div class="help-buttons">
+						<div class="help-button">
+							Свяжитесь с нами
+						</div><br>
+						<div class="help-button help-back">
+							Назад
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
+	<script src="js/source.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script src="js/help-faq.js" type="text/javascript"></script>
+	<script src="js/question.js" type="text/javascript"></script>
+	<script src="js/clock.js" type="text/javascript"></script>
+	<script src="js/quick-test.js" type="text/javascript"></script>
+	<script src="js/common.js" type="text/javascript"></script>
 </body>
 </html>

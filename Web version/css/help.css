@@ -4,6 +4,9 @@
 	color: #712046;
 	font-style: italic;
 }
+.help-logo h1 {
+	font-weight: 300;
+}
 .help-logo i {
 	padding-right: 10px;
 }

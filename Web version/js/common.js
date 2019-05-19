@@ -17,5 +17,5 @@ $(document).ready(function(){
 	$('.help-back').click(function(){
 		$('.help').removeClass('active');
 		$('.main-menu').addClass('active');
-	})
+	});
 });

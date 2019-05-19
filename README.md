@@ -4,5 +4,5 @@
 - Aleksieiev Vladyslav (<https://github.com/AleksieievVladyslav>) 
 - Hordiienko Nataliia (<https://github.com/nhordiienko>)
 - (<https://github.com/parahinad>)
-- Kochina Kateryna
+- Kochina Kateryna (<https://github.com/Fortel-X>)
 ---

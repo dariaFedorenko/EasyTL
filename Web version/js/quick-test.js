@@ -6,6 +6,7 @@ class Quick {
 		let answer = $(button).attr("id").substr(-1);
 		if (this.q.answers[answer].isCorrect) {
 			this.score++;
+			console.log(this.score);
 		}
 	}
 	constructor() {

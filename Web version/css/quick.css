@@ -1,0 +1,101 @@
+.clock-sect {
+	width: 35px;
+	text-align: center;
+	font-size: 1.5em;
+	display: inline-block;
+}
+.clock-sect:nth-child(1) {
+	text-align: right;
+}
+.clock-sect:nth-child(3) {
+	text-align: left;
+}
+.quick .logo {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	color: #712046;
+	padding: 20px 0px;
+	font-style: italic;
+}
+.quick .logo h1 {
+	font-size: 2.4em;
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+.quick .logo i {
+	padding-right: 10px;
+}
+.clock, .progress {
+	padding: 0px 20px;
+	display: inline-block;
+	color: #434343;
+}
+.clock p, .progress p {
+	text-align: center;
+	border-bottom: 2px solid #434343;
+}
+.clock .clock-face {
+	padding-top: 5px;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+p.progress-content {
+	padding-top: 5px;
+	font-size: 1.5em;
+	border-bottom: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.q-title {
+	margin: 20px 0px;
+	padding: 10px 20px;
+	font-size: 1.3em;
+	background: #ddd;
+}
+#img, #q-formulation {
+	font-size: 1.1em;
+	padding: 0px 20px;
+	text-align: center;
+}
+.q {
+	text-align: center;
+	padding-top: 30px;
+}
+.q-a {
+	font-weight: 200;
+	display: none;
+	width: 45%;
+	overflow: hidden;
+	border: 0.5px solid #777777;
+	padding: 5px 10px;
+	font-size: 1.2em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+.q-a:hover {
+	background: #E0EFDF;
+}
+.q-a:nth-child(2n) {
+	margin-left: 5%;
+}
+.q-a.long {
+	width: 100%;
+	margin: 0;
+}
+.q-a.active {
+	display: inline-block;
+}

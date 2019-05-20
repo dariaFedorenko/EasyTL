@@ -25,6 +25,12 @@ a {
 #page{
 	opacity: 0;
 }
+.col-r {
+	text-align: right;
+}
+.col-l {
+	text-align: left;
+}
 .dynamic-panel, .dynamic-panel > .state {
 	display: none;
 	position: fixed;
@@ -35,4 +41,20 @@ a {
 }
 .dynamic-panel, .dynamic-panel > .state.active {
 	display: block;
+}
+.wrapper {
+	padding: 0px 10px;
+	max-width: 1000px;
+	margin: auto;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

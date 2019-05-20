@@ -5,6 +5,8 @@
 	z-index: 100;
 	background-image:url(../img/load1.png);
 	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .load .logo {
 	text-align: center;

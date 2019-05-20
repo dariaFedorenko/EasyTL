@@ -1,6 +1,5 @@
 $(window).on("load", function() {
-	$("#load").delay(1000).fadeOut('slow');
-	$('#page').delay(1000).animate({'opacity':'1'},500);
+	$(".load").delay(1000).fadeOut();
 });
 $(document).ready(function(){
 	$('.menu a').click(function(e){

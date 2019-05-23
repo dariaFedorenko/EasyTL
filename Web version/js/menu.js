@@ -4,6 +4,11 @@ class Menu {
 		"#quick" : ".quick",
 		"#help" : ".help"
 	}
+	profileMenu = {
+		"#login" : ".login",
+		"#registration" : ".registration",
+		"#account" : ".account"
+	}
 	Redirect(event, element) {
 		event.preventDefault();
 		this.ClearActive();
@@ -17,6 +22,15 @@ class Menu {
 				break;
 		}
 		$(this.mainMenu[address]).addClass("active");
+	}
+	ProfileRedirect(event, element) {
+		event.preventDefault();
+		this.ProfileClearActive();
+		let address = $(element).attr("href");
+		$(this.profileMenu[address]).addClass("active");
+	}
+	ProfileClearActive() {
+		$('.profile-state').removeClass("active");
 	}
 	ClearActive() {
 		$(".state").removeClass("active");

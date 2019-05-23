@@ -1,5 +1,5 @@
 $(window).on("load", function() {
-	$("#load").fadeOut();
+	$(".load").delay(1000).fadeOut();
 });
 $(document).ready(function(){
 	$('.menu a').click(function(e){

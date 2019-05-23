@@ -15,7 +15,7 @@
 <body>
 	<main>
 		<div class="dynamic-panel">
-			<div class="state load active">
+			<div class="state load">
 				<div class="title"><h1>Make it easier</h1><h1 class="light">with</h1></div>
 				<div class="logo"><h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1></div>
 				<div id="fountainG">
@@ -39,11 +39,32 @@
 					</div>
 					<div class="profile">
 						<div class="profile-panel">
-							<div class="profile-state account active">
-								<nav class="profile">
-									<a href="#login">login</a>
-									<a href="#registration">registration</a>
-								</nav>
+							<div class="profile-state unlogged">
+							</div>
+							<div class="profile-state logged active">
+								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Выйти из аккаунта</a></div>
+								<div class="profile-header">User101</div>
+								<div class="profile-line"><hr></div>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<div class="questions">Вопросы
+									<div class="correct">Правильных: <span id ="correctanswers">0</span></div>
+									<div class="total">Всего: <span id ="totalanswers">0</span></div>
+								</div>
+								<div class="tests">Тесты
+									<div class="correct">Пройденных: <span id ="passedtests">0</span></div>	
+									<div class="total">Всего:<span id ="totaltests">0</span></div>
+								</div>
+								<div class="averages">Средние значения
+									<div class="correct">Верных ответов:<span id ="averageanswers">0</span></div>
+									<div class="total">Время прохождения:<span id ="averagetime">0</span></div>
+								</div>
+								<div class="share-result">Поделиться результатом</div>
 							</div>
 							<div class="profile-state login">
 								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Назад</a></div>

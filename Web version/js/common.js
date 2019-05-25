@@ -20,4 +20,6 @@ $(document).ready(function(){
 		$('.help').removeClass('active');
 		$('.main-menu').addClass('active');
 	});
+
+	new Profile(userStatistic);
 });

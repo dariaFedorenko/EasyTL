@@ -39,15 +39,15 @@ var userStatistic = {
 	name: "User101",
 	stars: "7",
 	questions: {
-		correct: 57,
-		total: 63
+		correct: 1,
+		total: 1
 	},
 	tests: {
 		passed: 2,
-		total: 3
+		total: 5
 	},
 	averages: {
-		correctAnswers: 13.2,
+		correctAnswers: 10,
 		time: 5
 	}
 }

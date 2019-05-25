@@ -5,6 +5,7 @@
 	bottom: 0;
 	top: 0;
 	border-left: 1px solid #000;
+	min-width: 400px;
 }
 .profile-state {
 	position: absolute;
@@ -149,7 +150,6 @@
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	border: 1px solid #000;
 	padding: 20px;
 	min-width: 400px;
 }
@@ -193,4 +193,132 @@
 }
 .link_back a:hover {
 	color: #33424C;
+}
+
+.logged {
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+.profile-header {
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 100;
+	text-align: right;
+	padding: 5px 20px;
+}
+
+div.profile-line{
+	size: 20;
+}
+.user-head {
+	padding-top: 20px;
+}
+.stars {
+	padding: 5px 20px 0px;
+	text-align: right;
+	margin-top: 10px;
+	color: #FADA5E;
+	font-size: 25px;
+}
+.stars > i {
+	padding: 0px 2px;
+}
+.questions {
+	margin-top: 30px;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 150;
+	padding-left: 20px;
+}
+
+.questions .correct{
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	background-color: #ABE188;
+	padding-right: 20px;
+
+
+}
+.questions .total{
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	background-color: #F6F6DD;
+	padding-right: 20px;
+}
+
+.tests {
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 150;
+	padding-left: 20px;
+}
+
+.tests .correct {
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	top: 65px;
+	background-color: #ABE188;
+	padding-right: 20px;
+}
+
+.tests .total{
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	background-color: #F6F6DD;
+	padding-right: 20px;
+}
+
+.averages {
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 150;
+	padding-left: 20px;
+}
+
+.averages .correct {
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	background-color: #ABE188;
+	padding-right: 20px;
+}
+
+.averages .total {
+	width: 95%;
+	text-align: center;
+	font-weight: 170;
+	background-color: #F6F6DD;
+	padding-right: 20px;
+}
+
+.share-result {
+	cursor: pointer;
+	position: relative;
+	margin-top: 50px;
+	height: 40px;
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	font-weight: 170;
+	font-style: italic;
+	font-size: 25px;
+	border: 0.5px solid #0652DD;
+	margin-bottom: 30px;
+}
+
+.share-result:hover {
+	background: #0652DD;
+	color: #fff;
+}
+.unlogged .link_back {
+	display: none;
 }

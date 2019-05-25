@@ -6,7 +6,9 @@ $(document).ready(function(){
 		new Menu().Redirect(e, this);
 	})
 	new HelpFAQ('.help-faq', '.help-answers');
-
+	$('.profile nav a').click(function(e) {
+		new Menu().ProfileRedirect(e, this);
+	})
 	$('.help-faq p').click(function(){
 		$('.help-faq p').removeClass("active");
 		$(this).addClass("active");

@@ -44,10 +44,10 @@ var userStatistic = {
 	},
 	tests: {
 		passed: 2,
-		total: 3
+		total: 5
 	},
 	averages: {
-		correctAnswers: 13,
+		correctAnswers: 10,
 		time: 5
 	}
 }

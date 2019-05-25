@@ -33,4 +33,21 @@ const QUESTIONS = [
 			}
 		]
 	}
-]
+];
+
+var userStatistic = {
+	name: "User101",
+	stars: "7",
+	questions: {
+		correct: 57,
+		total: 63
+	},
+	tests: {
+		passed: 2,
+		total: 3
+	},
+	averages: {
+		correctAnswers: 13.2,
+		time: 5
+	}
+}

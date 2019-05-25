@@ -195,31 +195,36 @@
 	color: #33424C;
 }
 
+.logged {
+	max-height: 100vh;
+	overflow-y: scroll;
+}
 .profile-header {
-	position:relative;
-	top: 45px;
-	left: 80%;
 	font-size: 40px;
 	font-style: italic;
 	font-weight: 100;
+	text-align: right;
+	padding: 5px 20px;
 }
 
 div.profile-line{
 	size: 20;
-	margin-top: 45px;
 }
-
-.stars{
-	position:relative;
+.user-head {
+	padding-top: 20px;
+}
+.stars {
+	padding: 5px 20px 0px;
+	text-align: right;
 	margin-top: 10px;
-	left: 79%;
 	color: #FADA5E;
 	font-size: 25px;
 }
-
+.stars > i {
+	padding: 0px 2px;
+}
 .questions {
-	position:relative;
-	top: 55px;
+	margin-top: 30px;
 	font-size: 30px;
 	font-style: italic;
 	font-weight: 150;
@@ -230,7 +235,6 @@ div.profile-line{
 	width: 95%;
 	text-align: center;
 	font-weight: 170;
-	top: 65px;
 	background-color: #ABE188;
 	padding-right: 20px;
 
@@ -240,14 +244,11 @@ div.profile-line{
 	width: 95%;
 	text-align: center;
 	font-weight: 170;
-	top: 65px;
 	background-color: #F6F6DD;
 	padding-right: 20px;
 }
 
 .tests {
-	position:relative;
-	top: 70px;
 	font-size: 30px;
 	font-style: italic;
 	font-weight: 150;
@@ -267,14 +268,11 @@ div.profile-line{
 	width: 95%;
 	text-align: center;
 	font-weight: 170;
-	top: 65px;
 	background-color: #F6F6DD;
 	padding-right: 20px;
 }
 
 .averages {
-	position:relative;
-	top: 85px;
 	font-size: 30px;
 	font-style: italic;
 	font-weight: 150;
@@ -285,7 +283,6 @@ div.profile-line{
 	width: 95%;
 	text-align: center;
 	font-weight: 170;
-	top: 65px;
 	background-color: #ABE188;
 	padding-right: 20px;
 }
@@ -294,7 +291,6 @@ div.profile-line{
 	width: 95%;
 	text-align: center;
 	font-weight: 170;
-	top: 65px;
 	background-color: #F6F6DD;
 	padding-right: 20px;
 }
@@ -302,18 +298,27 @@ div.profile-line{
 .share-result {
 	cursor: pointer;
 	position: relative;
-	margin-top: 150px;
+	margin-top: 50px;
 	height: 40px;
 	width: 400px;
-	margin-left: 300px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	text-align: center;
 	font-weight: 170;
 	font-style: italic;
 	font-size: 25px;
 	border: 0.5px solid #0652DD;
+	margin-bottom: 30px;
 }
 
 .share-result:hover {
 	background: #0652DD;
 	color: #fff;
+}
+.unlogged .link_back {
+	display: none;
 }

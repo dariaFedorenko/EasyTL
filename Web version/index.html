@@ -23,7 +23,7 @@
 					<div id="fountainG_1" class="fountainG"></div><div id="fountainG_2" class="fountainG"></div><div id="fountainG_3" class="fountainG"></div><div id="fountainG_4" class="fountainG"></div><div id="fountainG_5" class="fountainG"></div><div id="fountainG_6" class="fountainG"></div><div id="fountainG_7" class="fountainG"></div><div id="fountainG_8" class="fountainG"></div>
 				</div>
 			</div>
-			<div class="state main-menu">
+			<div class="state main-menu active">
 				<div class="row">
 					<div class="menu-col">
 						<div class="logo">
@@ -40,9 +40,14 @@
 					</div>
 					<div class="profile">
 						<div class="profile-panel">
-							<div class="profile-state unlogged">
+							<div class="profile-state unlogged active">
+								<div class="guest-header">Гость*</div>
+								<div class="profile-line"><hr></div>
+								<div class="register reg-click">Зарегистрироваться</div><div class="separator"></div>
+								<div class="enter enter-click">Войти</div>
+								<div class="available-stats">*Статистика доступна только авторизированным пользвателям!</div>
 							</div>
-							<div class="profile-state logged active">
+							<div class="profile-state logged">
 								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Выйти из аккаунта</a></div>
 								<div class="profile-header">User101</div>
 								<div class="profile-line"><hr></div>
@@ -68,7 +73,7 @@
 								<div class="share-result">Поделиться результатом</div>
 							</div>
 							<div class="profile-state login">
-								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
+								<div class="link_back back-to-guest"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
 								<div class="form">
 									<div class="form-h">
 										<h2>Вход</h2>
@@ -101,7 +106,7 @@
 								</div>
 							</div>
 							<div class="profile-state registration">
-								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
+								<div class="link_back back-to-guest"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
 								<div class="form">
 									<h2>Регистрация</h2>
 									<h3>Зарегистрируйтесь через E-mail</h3>
@@ -140,11 +145,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="theory state active">
+			<div class="theory state">
 				<div class="logo-theory">
 					<h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1>
 				</div>
-				<div class="to-menu"><a><i class="fas fa-arrow-left"></i>Назад в меню</a></div>
+				<div class="to-menu topic-back"><a><i class="fas fa-arrow-left"></i>Назад в меню</a></div>
 				<div class="top-header">Выбери, с чего начать!</div>
 				<div class="topics-list">
 					<p class="passed-topic">Начало движения и изменения его направления<hr></p>

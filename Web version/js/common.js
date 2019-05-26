@@ -21,5 +21,25 @@ $(document).ready(function(){
 		$('.main-menu').addClass('active');
 	});
 
+	$('.topic-back').click(function(){
+		$('.theory').removeClass('active');
+		$('.main-menu').addClass('active');
+	});	
+
+	$('.reg-click').click(function(){
+		$('.unlogged').removeClass('active');
+		$('.registration').addClass('active');
+	});
+
+	$('.enter-click').click(function(){
+		$('.unlogged').removeClass('active');
+		$('.login').addClass('active');
+	});
+
+	$('.back-to-guest').click(function(){
+		$('.login').removeClass('active');
+		$('.registration').removeClass('active');
+		$('.unlogged').addClass('active');
+	});
 	new Profile(userStatistic);
 });

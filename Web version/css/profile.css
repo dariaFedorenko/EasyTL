@@ -317,3 +317,69 @@ div.profile-line{
 	background: #0652DD;
 	color: #fff;
 }
+
+.register {
+	cursor: pointer;
+	position: absolute;
+	height: 30px;
+	top: 15%;
+	right: 20%;
+	padding-bottom: 2px;
+	border-bottom: 0px solid black;
+	font-weight: 150;
+	font-size: 20px;
+	transition: border-bottom 0.2s linear;
+}
+
+.register:hover {
+	border-bottom: 0.1px solid #0652DD;
+}
+
+.enter {
+	cursor: pointer;
+	position: absolute;
+	height: 30px;
+	top: 15%;
+	right: 5%;
+	padding-bottom: 2px;
+	border-bottom: 0px solid black;
+	font-weight: 150;
+	font-size: 20px;
+	transition: border-bottom 0.2s linear;	
+}
+
+.enter:hover {
+	border-bottom: 0.1px solid #0652DD;
+}	
+
+.guest-header {
+	position:relative;
+	top: 45px;
+	left: 80%;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.separator {
+	position: absolute;
+	top: 15%;
+	left: 85%;
+	height: 30px;
+	width: 1px;
+	background-color: #0652DD;
+}
+
+.available-stats {
+	position: absolute;
+	width: 95%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 170;
+	top: 40%;
+	margin-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 0.1px solid #0652DD;
+	border-bottom: 0.1px solid #0652DD;
+}

@@ -63,9 +63,13 @@ p.progress-content {
 	background: #ddd;
 }
 #img, #q-formulation {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	padding: 0px 20px;
 	text-align: center;
+}
+#img > img {
+	width: 100%;
+	max-width: 350px;
 }
 .q {
 	text-align: center;
@@ -98,4 +102,7 @@ p.progress-content {
 }
 .q-a.active {
 	display: inline-block;
+}
+.answers {
+	vertical-align: middle;
 }

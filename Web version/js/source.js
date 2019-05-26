@@ -38,6 +38,7 @@ const QUESTIONS = [
 var userStatistic = {
 	name: "User101",
 	stars: "7",
+	passedTopics: 0,
 	questions: {
 		correct: 1,
 		total: 1

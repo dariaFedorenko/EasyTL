@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/profile.css">
 	<link rel="stylesheet" href="css/help.css">
 	<link rel="stylesheet" href="css/quick.css">
+	<link rel="stylesheet" href="css/theory.css">
 </head>
 <body>
 	<main>
@@ -39,30 +40,40 @@
 					</div>
 					<div class="profile">
 						<div class="profile-panel">
-							<div class="profile-state logged unlogged active">
+							<div class="profile-state unlogged active">
+								<div class="guest-header">Гость*</div>
+								<div class="profile-line"><hr></div>
+								<div class="register reg-click">Зарегистрироваться</div><div class="separator"></div>
+								<div class="enter enter-click">Войти</div>
+								<div class="available-stats">*Статистика доступна только авторизированным пользвателям!</div>
+							</div>
+							<div class="profile-state logged">
 								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Выйти из аккаунта</a></div>
-								<div class="user-head">
-									<div class="profile-header">Гость</div>
-									<div class="profile-line"><hr></div>
-									<div class="stars">
-									</div>
+								<div class="profile-header">User101</div>
+								<div class="profile-line"><hr></div>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+									<i class="far fa-star"></i>
 								</div>
 								<div class="questions">Вопросы
-									<div class="correct">Правильных: <span id="correctanswers">0</span></div>
-									<div class="total">Всего: <span id="totalanswers">0</span></div>
+									<div class="correct">Правильных: <span id ="correctanswers">0</span></div>
+									<div class="total">Всего: <span id ="totalanswers">0</span></div>
 								</div>
 								<div class="tests">Тесты
-									<div class="correct">Пройденных: <span id="passedtests">0</span></div>	
-									<div class="total">Всего: <span id="totaltests">0</span></div>
+									<div class="correct">Пройденных: <span id ="passedtests">0</span></div>	
+									<div class="total">Всего:<span id ="totaltests">0</span></div>
 								</div>
 								<div class="averages">Средние значения
-									<div class="correct">Верных ответов: <span id="averageanswers">0</span></div>
-									<div class="total">Время прохождения: <span id="averagetime">0</span></div>
+									<div class="correct">Верных ответов:<span id ="averageanswers">0</span></div>
+									<div class="total">Время прохождения:<span id ="averagetime">0</span></div>
 								</div>
 								<div class="share-result">Поделиться результатом</div>
 							</div>
 							<div class="profile-state login">
-								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
+								<div class="link_back back-to-guest"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
 								<div class="form">
 									<div class="form-h">
 										<h2>Вход</h2>
@@ -95,7 +106,7 @@
 								</div>
 							</div>
 							<div class="profile-state registration">
-								<div class="link_back"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
+								<div class="link_back back-to-guest"><a><i class="fas fa-arrow-left"></i>Назад</a></div>
 								<div class="form">
 									<h2>Регистрация</h2>
 									<h3>Зарегистрируйтесь через E-mail</h3>
@@ -134,8 +145,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="state theory">
-				
+			<div class="theory state">
+				<div class="logo-theory">
+					<h1><i class="fas fa-american-sign-language-interpreting"></i>Easy TL</h1>
+				</div>
+				<div class="to-menu topic-back"><a><i class="fas fa-arrow-left"></i>Назад в меню</a></div>
+				<div class="top-header">Выбери, с чего начать!</div>
+				<div class="topics-list">
+					<p class="passed-topic">Начало движения и изменения его направления<hr></p>
+					<p class="opened-topic">Обгон<hr></p>
+					<p class="closed-topic">Остановка и стоянкa<hr></p>
+					<p class="closed-topic">Проезд перекрестков<hr></p>
+					<p class="closed-topic">Проезд пешеходных переходов и остановок транспортных средств<hr></p>
+					<p class="closed-topic">Движение через железнодорожные переезды<hr></p>
+				</div>
 			</div>
 			<div class="state quick">
 				<div class="wrapper">
@@ -202,9 +225,7 @@
 	<script src="js/help-faq.js" type="text/javascript"></script>
 	<script src="js/question.js" type="text/javascript"></script>
 	<script src="js/clock.js" type="text/javascript"></script>
-	<script src="js/profile.js" type="text/javascript"></script>
 	<script src="js/quick-test.js" type="text/javascript"></script>
 	<script src="js/common.js" type="text/javascript"></script>
-
 </body>
 </html>

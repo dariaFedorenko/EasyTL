@@ -106,3 +106,38 @@ p.progress-content {
 .answers {
 	vertical-align: middle;
 }
+.q-progress {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #000;
+	margin: 20px 0px 10px;
+	overflow: hidden;
+	border-radius: 1000px;
+	position: relative;
+}
+.q-progress-bar {
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	position: absolute;
+	left: 0;
+	width: 0;
+	background: green;
+	height: 100%;
+}
+.q-a.passed {
+	background: gray;
+	color: #000;
+	cursor: default;
+}
+.q-footer .q-next span {
+	cursor: pointer;
+}
+.q-footer .q-next {
+	text-align: right;
+}
+.q-footer .q-next i {
+	font-size: 1.5em;
+	padding-left: 5px;
+	vertical-align: middle;
+}

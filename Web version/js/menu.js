@@ -17,7 +17,8 @@ class Menu {
 			case "#quick":
 				let quick = new Quick();
 				$('.q-a').click(function() {
-					quick.Check(this);
+					if (quick.qList[quick.currentQ].isPassed !== true)
+						quick.Check(this);
 				});
 				break;
 		}

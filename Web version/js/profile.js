@@ -6,10 +6,19 @@ class Profile {
 		this.questions = input.questions;
 		this.tests = input.tests;
 		this.averages = input.averages;
+		this.passedTopics = input.passedTopics;
 
 		this.InitFields();
+		this.SetProgressTopics();
 	}
 
+	SetProgressTopics() {
+		let i;
+		for (i = 0; i < this.passedTopics; i++) {
+			$('.topic:eq(' + i + ')').removeClass('closed-topic').addClass('passed-topic');
+		}
+		$('.topic:eq(' + i + ')').removeClass('closed-topic').addClass('opened-topic');
+	}
 	InitFields() {
 		this.InitStars();
 		this.InitTextFields();

@@ -1,26 +1,34 @@
 .logo-theory{
-	width: 100%;
+	width: 50%;
 	color: #712046;
 	padding-top: 30px;
 	padding-left: 40px;
 	font-style: italic;
 	font-weight: 170;
 }
-
+.theory > .row i {
+	padding-right: 5px;
+}
 .to-menu {
-	position: absolute;
-	top: 40px;
-	left: 79%;
+	padding-top: 30px;
+	padding-right: 40px;
+	text-align: right;
+	vertical-align: bottom;
 	cursor: pointer;
 	color: #66757F;
 	font-size: 20px;
 	font-weight: 100;
-	transition: background-color 0.2s linear;
-	transition: border-bottom 0.5s linear;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 .to-menu:hover {
 	color: #33424C;
+	font-size: 1.5em;
+}
+.to-menu:hover i {
+	color: #0652DD;
 }
 
 .to-menu-line {
@@ -35,10 +43,14 @@
 }
 
 .topics-list{
-	list-style: none;
 	position: absolute;
-	top: 30%;
-	left: 30%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	max-height: 60vh;
+	overflow-y: scroll;
 }
 
 .topics-list p {
@@ -48,11 +60,14 @@
 	padding-right: 5px;
 	padding-bottom: 10px;
 }
-
-.passed-topic {
+.topic {
 	cursor: pointer;
-	background-color: #CFF0C2;
 	transition: background-color 0.5s linear;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 20px;
+}
+.passed-topic {
+	background-color: #CFF0C2;
 }
 
 .passed-topic:hover {
@@ -60,9 +75,7 @@
 }
 
 .opened-topic {
-	cursor: pointer;
 	background-color: #FFF2BC;
-	transition: background-color 0.5s linear;
 }
 
 .opened-topic:hover {
@@ -70,9 +83,7 @@
 }
 
 .closed-topic {
-	cursor: pointer;
 	background-color: #D3D3D3;
-	transition: background-color 0.5s linear;
 }
 
 .closed-topic:hover {
@@ -81,9 +92,8 @@
 
 .top-header {
 	color: #272048;
-	position: absolute;
-	top: 17%;
-	padding-left: 35%;
+	text-align: center;
+	padding-top: 20px;	
 	padding-bottom: 30px;
 	font-size: 2.4em;
 	font-family: 'Montserrat';

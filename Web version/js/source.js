@@ -34,7 +34,37 @@ const QUESTIONS = [
 		]
 	}
 ];
-
+const THEORY = [
+	{
+		theme: "Проверка",
+		elements: [
+			{
+				wrapper: 'p',
+				classes: 'topic-paragraph left',
+				content: '<b>Это проверка.</b> Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+			},
+			{
+				wrapper: 'p',
+				classes: 'topic-paragraph right',
+				content: 'Это проверка. <i>Второй абзац.</i> Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+			},
+			{
+				wrapper: 'p',
+				classes: 'topic-paragraph justify',
+				content: 'Это проверка. Third абзац. Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+			},
+			{
+				wrapper: 'ul',
+				classes: 'topic-list',
+				content: [
+					'Punct 1',
+					'Punct 2',
+					'Punct 3'
+				]
+			}
+		]
+	}
+]
 var userStatistic = {
 	name: "User101",
 	stars: "7",

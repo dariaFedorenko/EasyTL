@@ -99,3 +99,46 @@
 	background: #0652DD;
 	color: #fff;
 }
+
+.contact-us {
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.help-head {
+	font-size: 30px;
+	color: #0652DD;
+	font-weight: 500;
+	width: 600px;
+}
+
+.input {
+	margin-bottom: 20px;
+}
+
+.send-mes {
+	width: 100%;
+	outline: none !important;
+	resize: none;
+	height: 100px;
+	font: inherit;
+	padding: 10px 10px;
+	border: 1px solid #0652DD;
+}
+
+.send-feedb {
+	margin: 20px auto;
+}
+
+.contact-us label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-us .topic-hr {
+	margin-bottom: 30px; 
+}
+
+.contact-us .back-butt {
+	width: 40%;
+}

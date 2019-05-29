@@ -41,5 +41,22 @@ $(document).ready(function(){
 		$('.registration').removeClass('active');
 		$('.unlogged').addClass('active');
 	});
+
+	$('.share-back').click(() => {
+		$('.share').fadeOut();
+	});
+
+	$('.share-result').click(() => {
+		$('.share').fadeIn();
+	});
+
+	$('.contact-back').click(() => {
+		$('.contact-us').fadeOut();
+	});
+	
+	$('.contact-us-but').click(() => {
+		$('.contact-us').fadeIn();
+	});
 	new Profile(userStatistic);
+	new Theory(0);
 });

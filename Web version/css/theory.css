@@ -99,3 +99,50 @@
 	font-family: 'Montserrat';
 	font-weight: 170;
 }
+.theory-topic > .wrapper {
+	padding-top: 30px;
+}
+.topic-title {
+	font-size: 2em;
+	text-align: center;
+	color: #0652DD;
+	padding-bottom: 30px;
+	font-style: italic;
+}
+.topic-paragraph {
+	font-size: 1.3em;
+	width: 100%;
+	font-weight: 200;
+	padding: 10px 0px;
+}
+.topic-paragraph.right {
+	text-align: right;
+	padding-left: 30%;
+}
+.topic-paragraph.left {
+	text-align: left;
+	padding-right: 30%;
+}
+.topic-paragraph.center {
+	text-align: center;
+	padding: 10px 15%;
+}
+.topic-paragraph.justify {
+	text-align: justify;
+	padding: 10px 15%;
+}
+.topic-hr {
+	height: 1px;
+	margin: 10px 0px;
+	background: #0652DD;
+}
+.topic-listitem {
+	position: relative;
+	width: 75%;
+	margin: auto;
+	padding: 10px 10px;
+	color: #0652DD;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+}

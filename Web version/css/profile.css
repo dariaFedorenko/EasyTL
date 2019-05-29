@@ -72,10 +72,10 @@
 	text-align: center;
 	padding-top: 1px;
 }
-.profile .input {
+.profile .input, .column .input {
 	position: relative;
 }
-.profile .input > i {
+.profile .input > i, .column .input > i {
 	color: #0652DD;
 	font-size:22px;
 	left: 10px;
@@ -87,7 +87,7 @@
 	position: absolute;
 	cursor: pointer;
 }
-.profile .input > input {
+.profile .input > input, .column .input > input {
 	width: 100%;
 	padding: 10px 3px 10px 40px;
 	font-size: 16px;
@@ -318,14 +318,14 @@ div.profile-line{
 
 .register {
 	cursor: pointer;
-	position: absolute;
-	height: 30px;
-	top: 15%;
-	right: 20%;
 	padding-bottom: 2px;
 	font-weight: 150;
 	font-size: 20px;
 	transition: border-bottom 0.2s linear;
+}
+.but-bb {
+	position: relative;
+	
 }
 .but-bb::after {
 	position: absolute;
@@ -346,34 +346,35 @@ div.profile-line{
 	transition: all 0.5s linear;
 	width: 100%;
 }
-
+.frow {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 40px 0px 0px;
+}
 .enter {
+	text-align: right;
 	cursor: pointer;
-	position: absolute;
-	height: 30px;
-	top: 15%;
-	right: 5%;
 	padding-bottom: 2px;
 	font-weight: 150;
 	font-size: 20px;
-	transition: border-bottom 0.2s linear;	
 }
 
 .guest-header {
 	text-align: right;
-	padding: 20px 20px 0px 0px;
+	padding: 20px 40px 0px 0px;
 	font-size: 40px;
 	font-style: italic;
 	font-weight: 100;
 }
 
 .separator {
-	position: absolute;
-	top: 15%;
-	left: 85%;
-	height: 30px;
 	width: 1px;
 	background-color: #0652DD;
+	margin: 0px 20px;
 }
 
 .available-stats {
@@ -389,3 +390,78 @@ div.profile-line{
 	border-top: 0.1px solid #0652DD;
 	border-bottom: 0.1px solid #0652DD;
 }
+.arrow-text {
+	display: block;
+	position: fixed;
+	left: 400px;
+	right: 0px;
+	bottom: 0;
+	top: 40px;
+	overflow: hidden;
+	z-index: -1;
+}
+.arrow {
+	position: absolute;
+	top: 0;
+	right: 250px;
+	width: 400px;
+	height: 400px;
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: 50%;
+}
+.arrow-text span{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 350px;
+	font-size: 2em;
+	color: #0652DD;
+	font-weight: 200;
+}
+
+.share {
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.column {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+	
+}
+.f-icon {
+	font-size: 150px;
+	color: #3b5998;
+}
+.facebook {
+	padding-bottom: 20px;
+}
+
+.back-butt {	
+	width: 70%;
+	text-align: center;
+	border: 1px solid #0652DD;
+	padding: 7px 0px;
+	margin: auto;
+	color: #0652DD;
+	cursor: pointer;
+	font-weight: 200;
+}
+
+.back-butt:hover {
+	background: #0652DD;
+	color: #fff;
+}	

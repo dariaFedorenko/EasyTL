@@ -3,6 +3,7 @@ class Quick {
 		this.quickClock.Stop();
 	}
 	End() {
+		$('.q-a').off();
 		console.log('your score: ' + this.score);
 	}
 	NextQ() {

@@ -121,7 +121,7 @@ p.progress-content {
 	transition: all 0.3s linear;
 	position: absolute;
 	left: 0;
-	width: 0;
+	width: 5%;
 	background: green;
 	height: 100%;
 }

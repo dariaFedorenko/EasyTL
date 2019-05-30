@@ -108,7 +108,7 @@ p.progress-content {
 }
 .q-progress {
 	width: 100%;
-	height: 40px;
+	height: 15px;
 	border: 1px solid #000;
 	margin: 20px 0px 10px;
 	overflow: hidden;
@@ -121,23 +121,28 @@ p.progress-content {
 	transition: all 0.3s linear;
 	position: absolute;
 	left: 0;
-	width: 5%;
-	background: green;
+	width: 0%;
+	background: #3ef580;
 	height: 100%;
 }
 .q-a.passed {
-	background: gray;
+	background: #bbb;
 	color: #000;
 	cursor: default;
 }
-.q-footer .q-next span {
+.q-footer .q-next span, .q-footer .q-prev span{
 	cursor: pointer;
 }
 .q-footer .q-next {
 	text-align: right;
 }
-.q-footer .q-next i {
+.q-footer .q-next i{
 	font-size: 1.5em;
 	padding-left: 5px;
+	vertical-align: middle;
+}
+.q-footer .q-prev i {
+	font-size: 1.5em;
+	padding-right: 5px;
 	vertical-align: middle;
 }

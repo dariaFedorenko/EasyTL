@@ -36,32 +36,55 @@ const QUESTIONS = [
 ];
 const THEORY = [
 	{
-		theme: "Проверка",
+		theme: "<i>Начало движения и изменения его направления</i>",
 		elements: [
 			{
 				wrapper: 'p',
 				classes: 'topic-paragraph left',
-				content: '<b>Это проверка.</b> Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+				content: ''
 			},
 			{
 				wrapper: 'p',
 				classes: 'topic-paragraph right',
-				content: 'Это проверка. <i>Второй абзац.</i> Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+				content: ''
 			},
 			{
 				wrapper: 'p',
 				classes: 'topic-paragraph justify',
-				content: 'Это проверка. Third абзац. Привет мир и тому подобное. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim quae laudantium minus magni, aspernatur tempore alias reprehenderit, repellat tempora, velit nobis nam non dignissimos veniam, dolorum amet nesciunt dicta!'
+				content: '<b><i>Всегда делай это:</b></i>'
 			},
 			{
 				wrapper: 'ul',
 				classes: 'topic-list',
 				content: [
-					'Punct 1',
-					'Punct 2',
-					'Punct 3'
+					'убедись, что твои действия будут безопасны и не создадут препятствий или опасности другим участникам движения (вообще всегда, не только в вождении)!',
+					'не будь глупцом, уступи дорогу пешеходам и транспортным средствам при выезде из жилой зоны, дворов, мест стоянки!',
+					'съезжая же с дороги уступи дорогу велосипедистам и пешеходам, направление движения которых ты пересекаешь!',
+					'если из пункта 2 и 3 не понятно, то знай - придется уступать дорогу, и при перестроении тем машинам, что движутся в попутном направлении по той полосе, на которую ты намерен перестроиться - тоже:)',
+					'поворачиваешь? даже если это “поворот не туда” - заблаговременно займи соответствующее крайнее положение на проезжей части, предназначенной для движения в этом направлении!',
+					'дорогой друг, поворачивай так, чтобы при выезде с пересечения проезжих частей твоя машина не оказалась на встречке :) выезд с перекрестка, где организованно круговое движение можешь осуществлять с любой полосы, если направление движения не определено дорожными знаками или разметкой' 
+
 				]
-			}
+			},
+			{
+				wrapper: 'p',
+				classes: 'topic-paragraph justify',
+				content: '<b><i>Никогда не делай этого. Не разворачивайся на:</b></i>'
+			},
+			{
+				wrapper: 'ul',
+				classes: 'topic-list',
+				content: [
+					'на железнодорожных переездах;',
+					'на мостах, путепроводах, эстакадах и под ними;',
+					'в тоннелях, там же места нет;',
+					'не видишь дороги - не разворачивайся;',
+					'пощади пешеходов, не разворачивайся на пешеходных переходах и ближе 10м от них с обеих сторон, кроме случая разрешенного разворота на перекрестке;',
+					'на автомагистралях.',
+					'не едь задним ходом на: автомагистралях, дорогах для автомобилей, железнодорожных переездах, пешеходных переходах, перекрестках, мостах, путепроводах, эстакадах, в тоннелях, на въездах и выездах из них (ты всё ещё это читаешь?), а также на участках дорог с ограниченной обзорностью или недостаточной видимостью. Просто говоря, <b><i>ВЕЗДЕ</b></i>, где ты можешь создать аварийную ситуацию.',
+				]	
+			}, 
+
 		]
 	}
 ]

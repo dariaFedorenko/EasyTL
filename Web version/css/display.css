@@ -55,3 +55,6 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+body > .cbalink {
+	display: none!important;
+}

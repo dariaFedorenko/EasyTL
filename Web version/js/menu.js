@@ -16,10 +16,6 @@ class Menu {
 		switch (address) {
 			case "#quick":
 				let quick = new Quick();
-				$('.q-a').click(function() {
-					if (quick.qList[quick.currentQ].isPassed !== true)
-						quick.Check(this);
-				});
 				break;
 		}
 		$(this.mainMenu[address]).addClass("active");
